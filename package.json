@@ -1,13 +1,16 @@
 {
   "name": "qa-mcp-server",
   "version": "1.0.0",
-  "description": "AI-powered QA MCP Server for automated test generation",
+  "description": "QA MCP Server — code analysis and context enrichment for AI-assisted test generation",
   "type": "module",
   "main": "dist/server.js",
+  "bin": {
+    "qa-mcp-server": "./dist/server.js"
+  },
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.js",
-    "dev": "ts-node src/server.ts"
+    "dev": "tsx src/server.ts"
   },
   "keywords": [
     "mcp",
@@ -19,12 +22,12 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^0.5.0",
-    "zod": "^4.3.6"
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "zod": "^3.24.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.30",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.19.0",
     "typescript": "^5.4.5"
   }
 }
