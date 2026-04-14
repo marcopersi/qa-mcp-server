@@ -1,0 +1,8 @@
+{
+  "language": "typescript",
+  "unitTestFramework": "vitest",
+  "integrationTestFramework": "supertest",
+  "e2eFramework": "playwright",
+  "srcDir": "src",
+  "testDir": "tests"
+}
