@@ -10,7 +10,10 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.js",
-    "dev": "tsx src/server.ts"
+    "dev": "tsx src/server.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "inspect": "npx @modelcontextprotocol/inspector node dist/server.js"
   },
   "keywords": [
     "mcp",
@@ -28,6 +31,7 @@
   "devDependencies": {
     "@types/node": "^20.11.30",
     "tsx": "^4.19.0",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "vitest": "^4.1.4"
   }
 }

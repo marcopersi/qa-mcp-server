@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "qa-mcp-server": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["${workspaceFolder}/dist/server.js"]
+    }
+  }
+}
